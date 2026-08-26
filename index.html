@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="letter-a.png">
+
+
+    <title>Portfolio-AKHIL</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    
+</head>
+
+<body>
+    <canvas id="spaceCanvas"></canvas>
+
+    <!-- Generate floating tech particles -->
+    <div id="particles"></div>
+    <section class="section hero flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-12">
+        <!-- Left Text Section -->
+        <div class="md:w-1/0 text-left">
+            <h3 class="text-xl md:text-2xl text-white mb-2">HELLO, IT'S ME...!</h3>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-2">Akhilesh Bhagat</h1>
+            <h2 class="text-2xl md:text-3xl  font-semibold mb-4">
+                  And I'm a <span>Data Analyst, Data Scientist & AI Explorer</span>
+            </h2>
+           <p class="md:text-2xl md:text-base text-gray-300 max-w-md mb-4 font-semibold">
+                   I'm a data-driven tech enthusiast who loves transforming raw data into meaningful insights,
+    building interactive dashboards, exploring artificial intelligence, and solving real-world
+    business problems with data.
+            </p>
+
+            <!-- Social Icons -->
+<!-- Social Icons -->
+<div class="flex items-center gap-4 mb-6">
+
+    <a href="https://twitter.com/AkhileshBhagat76"
+       class="hover:scale-110 transition-transform duration-200 p-1 rounded-full">
+        <img src="https://img.icons8.com/?size=100&id=7OeRNqg6S7Vf&format=png&color=000000" alt="WhatsApp" class="w-14 h-14" />
+    </a>
+
+    <a href="https://github.com/codewithakhilesh"
+       class="hover:scale-110 transition-transform duration-200 p-1 rounded-full">
+        <img src="https://img.icons8.com/?size=100&id=lkh3AbJLmFpp&format=png&color=000000" alt="GitHub" class="w-14 h-14" />
+    </a>
+
+    <a href="https://www.instagram.com/iam_.akhillx/"
+       class="hover:scale-110 transition-transform duration-200 p-1 rounded-full">
+        <img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=FFFFFF"
+             alt="Instagram"
+             class="w-14 h-14" />
+    </a>
+
+    <a href="https://www.linkedin.com/in/akhilesh-bhagat/"
+       class="hover:scale-110 transition-transform duration-200 p-1 rounded-full">
+        <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
+             alt="LinkedIn"
+             class="w-14 h-14" />
+    </a>
+
+</div>
+
+            <!-- CV Button -->
+            <a href="Akhilesh_CV.pdf" download>
+                <button class="submit-btn">Download CV</button>
+            </a>
+        </div>
+
+        
+        <!-- Right Image Section -->
+<div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
+  <div class="p-1 rounded-full bg-gradient-to-r from-cyan-400 to-fuchsia-600 transition-shadow duration-300 hover:shadow-[0_0_30px_rgba(179,0,255,0.6)]">
+    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e]">
+      <img src="akhhil.png" alt="Akhilesh Bhagat" class="w-full h-full object-cover" />
+    </div>
+  </div>
+</div>
+
+    </section>
+
+
+<!-- about section -->
+    <section class="section">
+        <h2>ABOUT ME</h2>
+      <p class="tagline">
+    Hey! I’m a Data Analyst who loves turning raw data into meaningful insights and
+business decisions. I work with Excel, SQL, Power BI, and Python to clean,
+    analyze, visualize, and understand data.
+    From building interactive dashboards to exploring trends and patterns,
+    I enjoy solving real-world problems with data and creating clear,
+    actionable insights.
+    Always learning, always analyzing, and always exploring the future of
+    Data Analytics, Data Science, and AI.
+</p>
+
+
+    </section>
+
+
+<!-- skill section -->
+
+
+    <section class="skills-section" id="skills">
+        <h2 class="skills-wrapper">Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><img src="html.png" alt="HTML" width="40"></div>
+                <h3>HTML</h3>
+                <p>"Structured the web with HTML."</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><img src="css.png" alt="CSS" width="40"></div>
+                <h3>CSS</h3>
+                <p>"CSS for sleek, modern UI."</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><img src="java.png" alt="JavaScript" width="40"></div>
+                <h3>JavaScript</h3>
+                <p>"Made it interactive with JavaScript."</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><img src="css-3.png" alt="Tailwind CSS" width="40"></div>
+                <h3>Tailwind CSS</h3>
+                <p>"Fast, responsive UI with Tailwind."</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><img src="python.png" alt="Python" width="40"></div>
+                <h3>Python</h3>
+                <p>"Python-powered logic and data."</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><img src="dsa.png" alt="Python DSA" width="40"></div>
+                <h3>Python DSA</h3>
+                <p>"Problem solving with DSA."</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><img src="chatgpt.png" alt="ChatGPT" width="40"></div>
+                <h3>Master ChatGPT</h3>
+                <p>"Prompt engineering and logic."</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><img src="algorithm.png" alt="Algorithm" width="40"></div>
+                <h3>Basic Algorithm</h3>
+                <p>"Core Python logic and flow."</p>
+            </div>
+        </div>
+    </section>
+<!-- project section -->
+    <section class="section">
+        <h2>PROJECTS</h2>
+        <div class="projects-container">
+
+
+            <a href="#" target="_blank" class="project-card-link">
+                <div class="project-card">
+                    <img src="mynta.jpg" alt="Myntra clone e-commerce UI" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Myntra Clone</h3>
+                        <p>A stylish e-commerce clone featuring category filters, cart, and responsive design.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="project-card-link">
+                <div class="project-card">
+                    <img src="calculater.jpg" alt="Calculator UI for basic arithmetic" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Calculator</h3>
+                        <p>Performs standard arithmetic operations with a clean, interactive design.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="project-card-link">
+                <div class="project-card">
+                    <img src="login page.jpg" alt="Modern login page UI design" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Login Page</h3>
+                        <p>Modern login page with clean UI and form validation.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" target="_blank" class="project-card-link">
+                <div class="project-card">
+                    <img src="calendar.jpg" alt="Interactive calendar application UI" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Calendar</h3>
+                        <p>Interactive calendar with date selection and smooth navigation.</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+
+
+    <!-- Add this Certificates section below your Projects section -->
+    <!-- Certificates Section -->
+        
+    
+<!-- Certificates Section -->
+<section class="section" id="certificates" style="min-height: auto; padding: 20px 10%;">
+
+  <h2>CERTIFICATES</h2>
+
+  <div class="certificates-container transition-all duration-700 ease-in-out overflow-x-auto whitespace-nowrap max-w-full px-4 py-6 mt-6">
+    
+    <!-- Card 1 -->
+    <div class="certificate-card inline-block align-top mr-6">
+      <img src="aws.jpg" alt="Certificate 1" class="certificate-image" />
+      <div class="certificate-title">Amazon Web Services</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="certificate-card inline-block align-top mr-6">
+      <img src="sky scanner.jpg" alt="Certificate 2" class="certificate-image" />
+      <div class="certificate-title">Sky Scanner</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="certificate-card inline-block align-top mr-6">
+      <img src="jp morgan.jpg" alt="Certificate 3" class="certificate-image" />
+      <div class="certificate-title">J.P.Morgan</div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="certificate-card inline-block align-top mr-6">
+      <img src="accenture.jpg" alt="Certificate 4" class="certificate-image" />
+      <div class="certificate-title">Accenture</div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="certificate-card inline-block align-top mr-6">
+      <img src="GE aeorospace.jpg" alt="Certificate 5" class="certificate-image" />
+      <div class="certificate-title">General Electric Aerospace</div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="certificate-card inline-block align-top mr-6">
+      <img src="chatgpt.jpg" alt="Certificate 5" class="certificate-image" />
+      <div class="certificate-title">Master ChatGPT</div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="certificate-card inline-block align-top mr-6">
+      <img src="algorithm.jpg" alt="Certificate 5" class="certificate-image" />
+      <div class="certificate-title">Machine Learning</div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="certificate-card inline-block align-top mr-6">
+      <img src="python.jpg" alt="Certificate 5" class="certificate-image" />
+      <div class="certificate-title">Python</div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Contact Section -->
+
+<section class="section" id="contact">
+
+    <h2>CONTACT WITH AKHIL</h2>
+
+    <form 
+        class="contact-form"
+        action="https://formspree.io/f/mnpaezbg"
+        method="POST">
+
+        <div class="form-group">
+            <input 
+                type="text" 
+                name="name"
+                placeholder=" Your Name *" 
+                required>
+        </div>
+
+        <div class="form-group">
+            <input 
+                type="email" 
+                name="email"
+                placeholder=" Your Email *" 
+                required>
+        </div>
+
+        <div class="form-group">
+            <input 
+                type="text" 
+                name="subject"
+                placeholder=" Subject ">
+        </div>
+
+        <div class="form-group">
+            <textarea 
+                name="message"
+                placeholder=" Your Message *" 
+                required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">
+            TRANSMIT MESSAGE
+        </button>
+
+    </form>
+
+</section>
+
+    
+<script src="script.js"></script>
+   <script src="name-scroll.js"></script>
+</body>
+
+</html>
